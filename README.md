@@ -128,9 +128,6 @@ whisper_project/
 ### **步骤1:准备音频文件**
 
 ```python
-# 下载示例音频(TED演讲片段)
-# 或使用自己录制的音频
-
 # 音频要求:
 # - 格式: mp3/wav/m4a等常见格式
 # - 时长: 3-5分钟
@@ -167,11 +164,15 @@ print(f"准确率: {accuracy:.2f}%")
 ```bash
 # 运行分析程序
 python code/analyze.py
-
 # 生成结果:
 # output/wordcloud.png - 词云图
 # output/keywords_bar.png - 关键词柱状图
 # output/analysis_report.txt - 文本报告
+
+
+# ps：由于pythonspaCy在Python 3.14下无法使用
+# 选择只依赖jieba和matplotlib功能完全够用
+python code/analyze_no_spacy.py
 ```
 
 
