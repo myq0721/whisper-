@@ -1,8 +1,6 @@
 """
 文本分析工具 - 改进版(增强清理功能)
 只使用jieba和基础工具
-保存为: analyze_simple.py
-运行: python analyze_simple.py
 """
 
 import re
