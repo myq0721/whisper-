@@ -168,11 +168,6 @@ python code/analyze.py
 # output/wordcloud.png - 词云图
 # output/keywords_bar.png - 关键词柱状图
 # output/analysis_report.txt - 文本报告
-
-
-# ps：由于pythonspaCy在Python 3.14下无法使用
-# 选择只依赖jieba和matplotlib功能完全够用
-python code/analyze_no_spacy.py
 ```
 
 
@@ -223,3 +218,6 @@ chunk = audio[0:60000]  # 前60秒
 chunk.export("chunk.mp3")
 ```
 
+### ps：由于pythonspaCy在Python 3.14下无法使用
+# 选择只依赖jieba和matplotlib功能完全够用
+python code/analyze_no_spacy.py
