@@ -1,3 +1,8 @@
+##通过whisper进行语音转录并分析文本准确率，高频词表，积极消极性，生成词云图，柱状图等，支持多语种
+
+效果下
+<img width="3569" height="1768" alt="keywords_bar" src="https://github.com/user-attachments/assets/4784f3c6-4ad0-4160-9e4e-057527e055dc" />
+<img width="2740" height="1471" alt="wordcloud" src="https://github.com/user-attachments/assets/6470b04f-e70b-4539-a4ef-ead956cdd59e" />
 
 ### **1.1 安装Python**
 
