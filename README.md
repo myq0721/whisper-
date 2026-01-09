@@ -138,8 +138,21 @@ whisper_project/
 
 ```bash
 # 1. 将音频文件放入 audio/ 文件夹
+
+
+#在代码的main函数部分将名称修改为你的音频文件
+    #2. 转录音频文件
+    audio_file = "audio/BBCNEWS2.mp3"
+
+
+#修改为你的参考文本文件，如有
+    # 4. 如果有参考文本,计算准确率
+    reference_file = "audio/BBCNEWS2.txt"  # 参考文本路径
+
+
 # 2. 运行转录程序
 python code/transcribe.py
+
 
 # 3. 查看结果
 # output/xxx_transcription.txt - 纯文本
@@ -168,6 +181,12 @@ python code/analyze.py
 # output/wordcloud.png - 词云图
 # output/keywords_bar.png - 关键词柱状图
 # output/analysis_report.txt - 文本报告
+```
+
+```
+### ps：由于pythonspaCy在Python 3.14下无法使用
+# 选择只依赖jieba和matplotlib功能完全够用
+python code/analyze_no_spacy.py
 ```
 
 
@@ -218,6 +237,3 @@ chunk = audio[0:60000]  # 前60秒
 chunk.export("chunk.mp3")
 ```
 
-### ps：由于pythonspaCy在Python 3.14下无法使用
-# 选择只依赖jieba和matplotlib功能完全够用
-python code/analyze_no_spacy.py
